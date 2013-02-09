@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>URL Query Comparer</title>
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <style>
+        body {
+            padding: 10px;
+        }
+
+        table {
+            font-size: 0.9em;
+        }
+
+        .empty_value {
+            color: red;
+            font-weight: bold;
+        }
+
+        .undefined_key {
+            color: darkgrey;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+<h1>URL Query Comparer</h1>
+
+<form>
+    <p>Input some URLs to be compared and click 'parse'</p>
+    <textarea id="urls" rows="10" style="width: 800px;"></textarea><br>
+    <label class="checkbox">
+        <input type="checkbox" checked="true" id="decodeURI">Decode URL
+    </label>
+    <input type="button" value="parse" onclick="UQC.parse();" class="btn">
+</form>
+<div id="result">
+</div>
+<script src="uqc.js"></script>
+</body>
+</html>
