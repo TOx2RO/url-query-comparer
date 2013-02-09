@@ -1,7 +1,7 @@
 URL Query Comparer
 =====================
 
-Comparing multiple URLs having similar query parameters in an easy-to-read manner.
+Comparing multiple URLs having similar query parameters and visualize them in web browsers.
 
 Example
 ---------------------
